@@ -4,6 +4,18 @@
   padding-top: 3rem;
 }
 
+.winterq{
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+.springq{
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
 .title{
   padding-left: .5rem;
   font-weight: 400;

@@ -1,0 +1,46 @@
+.featured{
+  width: 100%;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+}
+
+.image-container{
+  width: 40%;
+}
+
+.photo{
+  height: 100%;
+  width: auto;
+}
+
+.about-container{
+  background-color: black;
+  color: #fff;
+  width: 60%;
+  font-family: 'Montserrat';
+  padding: 2rem;
+}
+
+.meet{
+  font-size: 6rem;
+  font-weight: 800;
+}
+
+.position{
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.year{
+  font-weight: 500;
+}
+
+.pronouns{
+  font-weight: 600;
+}
+
+.bio{
+  font-size: 1.25rem;
+  padding-top: 2rem;
+}

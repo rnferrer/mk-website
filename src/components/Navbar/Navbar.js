@@ -2,7 +2,7 @@ import react, {useState, useEffect} from "react";
 import { Link, Outlet} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons'
-import logo from '../../mkWhite.png';
+import logo from '../../images/mkWhite.png';
 import './Navbar.css'
 
 function Navbar() {
