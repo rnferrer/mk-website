@@ -12,7 +12,6 @@ import flyer from '../../images/flyer2.jpg'
 function EventCard(props) {
   const [sbutton, setButton] = useState(false)
 
-  console.log(sbutton)
   return(
     <>
       <div className="card-container" onClick={()=>setButton(true)}>
