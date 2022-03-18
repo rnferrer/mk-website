@@ -5,7 +5,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../images/mkWhite.png';
 
 function Popup(props){
-  console.log(props, props.trigger)
+  
   return (props.trigger) ? (
     <div className="popup">
       <div className="popup-container">

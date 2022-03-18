@@ -10,7 +10,7 @@ import flyer from '../../images/flyer2.jpg'
 
 
 function EventCard(props) {
-  const [sbutton, setButton] = useState(false)
+  const [button, setButton] = useState(false)
 
   return(
     <>
@@ -27,7 +27,7 @@ function EventCard(props) {
         </div>
 
       </div>
-      <Popup trigger={sbutton} setTrigger={setButton} className='popup-container'>
+      <Popup trigger={button} setTrigger={setButton} className='popup-container'>
         <div className="flyer-container">
           <img src={flyer} className='flyer'></img>
         </div>

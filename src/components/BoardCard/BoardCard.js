@@ -4,7 +4,7 @@ import './BoardCard.css'
 function BoardCard (props){
   return(
     <div className='boardcard-container'>
-      <div className="board-image-container">
+      <div className="board-image-container" onClick={()=>props.setName(props.name)}>
         <img src={flyer} className='board-image'></img>
       </div>
       <h3 className='boardcard-position'>{props.position}</h3>
