@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Navbar from './components/Navbar/Navbar';
 import Events from './components/Events/Events';
 import Board from './components/Board/Board';
+import Home from './components/Home/Home';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Navbar/>}>
+          <Route path='/' element={<Home/>}/>
           <Route path='events' element={<Events/>} />
           <Route path='board' element={<Board/>}/>
           <Route path='hixstory' />

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Board.css';
-import sample from '../../images/sample1.png';
+import sample from '../../images/sample.png';
 import BoardCard from '../BoardCard/BoardCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';

@@ -11,6 +11,7 @@
   width: 100%;
   height: auto;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .boardcard-position, .boardcard-name{
