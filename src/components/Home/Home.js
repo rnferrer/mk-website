@@ -47,32 +47,32 @@ function Home(){
         <h1 className='four-title'>Four Pillars</h1>
         <div className='pillars-container'>
           <div className='academic-container'>
-            <div className='academic-logo-container'>
-              <img src={book} alt='book' className ='academic-logo'></img>
+            <div className='pillar-logo-container'>
+              <img src={book} alt='book' className ='pillar-logo'></img>
             </div>
             <h3 className='pillar-title'>Academic</h3>
-            <p className='pillar-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p className='pillar-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className='cultural-container'>
-            <div className='cultural-logo-container'>
-              <img src={book} alt='book' className ='academic-logo'></img>
+            <div className='pillar-logo-container'>
+              <img src={book} alt='book' className ='pillar-logo'></img>
             </div>
             <h3 className='pillar-title'>Cultural</h3>
-            <p className='pillar-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p className='pillar-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className='political-container'>
-            <div className='political-logo-container'>
-              <img src={book} alt='book' className ='academic-logo'></img>
+            <div className='pillar-logo-container'>
+              <img src={book} alt='book' className ='pillar-logo'></img>
             </div>
             <h3 className='pillar-title'>Political</h3>
-            <p className='pillar-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p className='pillar-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className='social-container'>
-            <div className='social-logo-container'>
-              <img src={book} alt='book' className ='academic-logo'></img>
+            <div className='pillar-logo-container'>
+              <img src={book} alt='book' className ='pillar-logo'></img>
             </div>
             <h3 className='pillar-title'>Social</h3>
-            <p className='pillar-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p className='pillar-body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
       </div>

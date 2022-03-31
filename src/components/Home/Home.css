@@ -61,6 +61,7 @@
 }
 
 .triangle-top{
+  margin: -1px;
   background-color: black;
   width: 100%;
   height: 200px;
@@ -128,6 +129,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   padding: 2rem;
 }
 
@@ -185,4 +187,54 @@
 
 .kappa{
   width: auto;
+}
+
+@media screen and (max-width: 960px){
+
+  .triangle-top{
+    margin: -1px;
+  }
+
+  .mission{
+    margin: 0;
+    padding: 0;
+    width: 70%;
+  }
+
+  .mission-body{
+    width: fit-content;
+    overflow-wrap: break-word;
+  }
+
+  .four-container{
+    height: fit-content;
+  }
+
+  .pillars-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pillar-logo-container{
+    height: 150px;
+    width: 150px;
+    padding: 1rem;
+  }
+
+  .pillar-logo{
+    width: 100%;
+    height: auto;
+  }
+
+  .cultural-container{
+    border-right: none;
+  }
+
+  .academic-container, .cultural-container, .political-container, .social-container{
+    padding: 1rem;
+  }
+
+  .academic-container, .cultural-container{
+    border-bottom: 1px solid white;
+  }
 }

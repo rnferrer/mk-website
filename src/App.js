@@ -5,19 +5,23 @@ import Navbar from './components/Navbar/Navbar';
 import Events from './components/Events/Events';
 import Board from './components/Board/Board';
 import Home from './components/Home/Home';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Navbar/>}>
+            <Route path='/' element={<Home/>}/>
+            <Route path='events' element={<Events/>} />
+            <Route path='board' element={<Board/>}/>
+            <Route path='hixstory' />
+          </Route>
+        </Routes>
+        <Footer/>
+      </div>
 
-      <Routes>
-        <Route path="/" element={<Navbar/>}>
-          <Route path='/' element={<Home/>}/>
-          <Route path='events' element={<Events/>} />
-          <Route path='board' element={<Board/>}/>
-          <Route path='hixstory' />
-        </Route>
-      </Routes>
     </Router>
   );
 }

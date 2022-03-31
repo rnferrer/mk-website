@@ -84,10 +84,10 @@ function Board(){
           <p className='bio'>{currentMember.bio}</p>
           <div className='links'>
             <a href={currentMember.instagram} target="_blank" className='link'>
-              <i className="fa fa-instagram"></i>
+              <FontAwesomeIcon icon={['fab', 'instagram']} />
             </a>
             <a href='https://www.facebook.com/' target="_blank" className='link'>
-              <i className="fa fa-facebook-square"></i>
+              <FontAwesomeIcon icon={['fab', 'facebook']} />
             </a>
             <a href='mailto:emailhere@xyz.com' className='link'>
               <FontAwesomeIcon icon={faEnvelope} /> 
