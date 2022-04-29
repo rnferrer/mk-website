@@ -1,0 +1,25 @@
+.fallq{
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+.winterq{
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+.springq{
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  min-height: 100vh;
+}
+
+.title{
+  padding-left: .5rem;
+  font-weight: 400;
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+}

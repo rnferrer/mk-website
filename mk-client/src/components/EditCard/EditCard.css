@@ -1,0 +1,87 @@
+.edit-popup-container{
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.editcard-container{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.editcard-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-button, .remove-button{
+  width: 90px;
+  height: 40px;
+}
+
+.edit-button{
+  margin-right: 5px;
+}
+
+.pencil, .trash{
+  margin-left: 5px;
+}
+
+.edit-label{
+  color: white;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  padding-right: 6.5rem;
+  width: 90%;
+}
+
+.edit-input{
+  background-color: rgb(160, 160, 160);
+  height: 30px;
+  width: 500px;
+}
+.bio-input{
+  height: 90px;
+}
+.save-button{
+  width: 20%;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 6px 10px;
+  font-size: 1.1rem;
+}
+
+.remove-container{
+  display:flex;
+  flex-direction: column;
+  padding: 3rem;
+  margin-right: 3rem;
+}
+
+.remove-text{
+  color: white;
+}
+
+.answer-button{
+  margin-top: 1rem;
+  margin-right: .5rem;
+  padding: 6px 20px;
+}
+
+@media screen and (max-width: 960px){
+  .editcard-buttons{
+    flex-direction: column;
+  }
+
+  .edit-button{
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,290 @@
+.titlepage{
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+.title-text{
+  width: auto;
+}
+.subtitle1, .subtitle2, .mk{
+  font-family: 'Montserrat';
+  color: white;
+}
+
+.subtitle1, .subtitle2{
+  font-size: 2rem;
+}
+
+.mk{
+  font-size: 7rem;
+  padding: 2rem 0 .5rem 0;
+}
+
+.baybayin-container{
+  height: 50px;
+  width: 200px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.baybayin{
+  width: 100%;
+  height: auto;
+}
+
+
+.title-logo-container{
+  height: 500px;
+  width: 500px;
+}
+
+.subtitle2-container{
+  display: flex;
+  justify-content: flex-end;
+}
+.title-logo{
+  height: auto;
+  width: 100%;
+}
+
+.triangle-bottom{
+  margin-top: -1px;
+  background-color: black;
+  width: 100%;
+  height: 150px;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 0);
+}
+
+.triangle-top{
+  margin: -1px;
+  background-color: black;
+  width: 100%;
+  height: 200px;
+  clip-path: polygon(0 40%, 0% 100%, 100% 100%);
+}
+
+.mission{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0 4rem 0;
+}
+
+.mission-title, .mission-body{
+  font-family: 'Montserrat';
+}
+
+.mission-title{
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.mission-body{
+  width: 1080px;
+  font-size: 1.5rem;
+}
+
+.four-container{
+  background-color: black;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.four-title{
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 3rem;
+  font-weight: 400;
+  padding-bottom: 3rem;
+}
+
+.pillars-container{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.pillar-title{
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-bottom: 1rem; 
+}
+
+.pillar-body{
+  color: white;
+}
+
+.academic-container, .cultural-container, .political-container, .social-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.academic-container, .cultural-container, .political-container{
+  border-right: 1px solid white;
+}
+
+.organizations-parent-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.organizations-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  border: 5px solid black;
+  padding: 2rem;
+}
+
+.logos-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.org-title{
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 3rem;
+  padding: 2rem 0 2rem 0;
+  text-align: center;
+}
+
+.org-logo-container{
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.org-logo{
+  width: 100%;
+  height: auto;
+}
+
+.fahc{
+  width: 70%;
+}
+
+.kappa{
+  width: auto;
+}
+
+@media screen and (max-width: 960px){
+
+  .titlepage{
+    flex-direction: column;
+  }
+
+  .title-text{
+    margin-bottom: 1rem;
+  }
+
+  .subtitle1{
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .mk{
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .baybayin-container{
+    display: none;
+  }
+
+  .subtitle2-container{
+    justify-content: center;
+  }
+
+  .subtitle2{
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .title-logo-container{
+    height: 300px;
+    width: 250px;
+  }
+
+  .triangle-top{
+    margin: -1px;
+  }
+
+  .mission{
+    margin: 0;
+    padding: 1rem;
+    width: 70%;
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mission-body{
+    width: fit-content;
+    overflow-wrap: break-word;
+    font-size: 1.25rem;
+  }
+
+  .four-container{
+    height: fit-content;
+  }
+
+  .pillars-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pillar-logo-container{
+    height: 150px;
+    width: 150px;
+    padding: 1rem;
+  }
+
+  .pillar-logo{
+    width: 100%;
+    height: auto;
+  }
+
+  .cultural-container{
+    border-right: none;
+  }
+
+  .academic-container, .cultural-container, .political-container, .social-container{
+    padding: 1rem;
+  }
+
+  .academic-container, .cultural-container{
+    border-bottom: 1px solid white;
+  }
+
+  .org-title{
+    font-size: 2.25rem;
+  }
+
+  .org-logo-container{
+    height: 150px;
+    width: 150px;
+  }
+}

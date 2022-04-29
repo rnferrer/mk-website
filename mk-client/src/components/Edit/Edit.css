@@ -1,0 +1,48 @@
+.edit-tab-container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.choose-edit-label{
+  font-size: 1.5rem;
+}
+
+.select-menu{
+  font-size: 1.25rem;
+}
+
+.option-container{
+  margin-bottom: 2rem;
+}
+
+.edit-container{
+  width: 60%;
+}
+
+.add-button{
+  display: flex;
+  color: black;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin-top: 1rem;
+  padding: 8px 20px;
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+  .add-button:hover{
+    background: black;
+    color: white;
+  }
+
+  @media screen and (max-width: 960px){
+    .edit-container{
+      width: 90%;
+    }
+  }
