@@ -10,20 +10,27 @@ import {BASE_URL} from '../../config'
 function Board(){
 
 const [members, setMembers] = useState([])
+const [currentMember, setCurrentMember] = useState({});
 
 useEffect(()=>{
     const getBoard = async() =>{
       const data = await fetch(`${BASE_URL}/board`)
       const newMembers = await data.json()
-      console.log(newMembers)
-      setMembers(newMembers)
-      setCurrentMember(newMembers[0])
+      if (newMembers.length === 0){
+        setMembers([])
+        setCurrentMember({})
+
+      }else{
+        setMembers(newMembers)
+        setCurrentMember(newMembers[0])
+      }
+
     }
     getBoard()
     
   },[])
 
-  const [currentMember, setCurrentMember] = useState({});
+
 
   const handleChangeCurrent = (newName) => {
     const found = members.find((member)=> member.name===newName)
