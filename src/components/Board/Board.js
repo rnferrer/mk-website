@@ -12,7 +12,7 @@ const [members, setMembers] = useState([])
 
 useEffect(()=>{
     const getBoard = async() =>{
-      const data = await fetch('http://localhost:3000/board')
+      const data = await fetch('/board')
       const newMembers = await data.json()
       console.log(newMembers)
       setMembers(newMembers)

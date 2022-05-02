@@ -1,5 +1,1 @@
-/mk-api/node_modules
-/mk-api/.env
-
-/mk-client/node_modules
-
+node_modules

@@ -17,7 +17,7 @@ function App() {
     if (window.localStorage.getItem('token')){
       const checkToken = async ()=>{
         const token = window.localStorage.getItem('token')
-        const authToken = await fetch ('http://localhost:3000/verify', {
+        const authToken = await fetch ('/verify', {
           method:'get',
           headers: {'Content-Type': 'application/json',
                     'Access-Control-Allow-Origin': '*',

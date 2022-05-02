@@ -47,7 +47,7 @@ function Events () {
 
   useEffect(()=>{
     const getEvents = async() =>{
-      const data = await fetch('http://localhost:3000/events')
+      const data = await fetch('/events')
       const newEvents = await data.json()
       const events = newEvents.events
 

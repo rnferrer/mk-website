@@ -48,7 +48,7 @@ function EditCard(props){
     const dayString = dayToString(dayNum)
 
     try{
-      const editEvent = await fetch('http://localhost:3000/events',{
+      const editEvent = await fetch('/events',{
         method:'put',
         headers: {'Content-Type': 'application/json',
                   'Access-Control-Allow-Origin': '*',
@@ -75,7 +75,7 @@ function EditCard(props){
     event.preventDefault()
     const token = window.localStorage.getItem('token')
     try{
-      const editBoard = await fetch('http://localhost:3000/boards',{
+      const editBoard = await fetch('/boards',{
         method:'put',
         headers: {'Content-Type': 'application/json',
                   'Access-Control-Allow-Origin': '*',
@@ -107,7 +107,7 @@ function EditCard(props){
     const deleteBody = {id: props.id}
     const token = window.localStorage.getItem('token')
     if (props.currentEdit === 'events'){
-      const deleteEvent = await fetch ('http://localhost:3000/events' , {
+      const deleteEvent = await fetch ('/events' , {
         method: 'delete',
         headers: {'Content-type': 'application/json',
                   'Access-Control-Allow-Origin': '*',
@@ -116,7 +116,7 @@ function EditCard(props){
       })
       setRemoveTrigger(false)
     }else{
-      const deleteBoard = await fetch ('http://localhost:3000/boards' , {
+      const deleteBoard = await fetch ('/boards' , {
         method: 'delete',
         headers: {'Content-type': 'application/json',
                   'Access-Control-Allow-Origin': '*',

@@ -15,7 +15,7 @@ function Edit(){
 
   useEffect(()=>{
     const getEvent = async() =>{
-      const data = await fetch('http://localhost:3000/edit')
+      const data = await fetch('/edit')
       const newEvents = await data.json()
       
       setEvents(newEvents.events)
@@ -65,7 +65,7 @@ function Edit(){
     const dayNum = day.getDay()
     const dayString = dayToString(dayNum)
     const token = window.localStorage.getItem('token')
-    const response = await fetch('http://localhost:3000/events',{
+    const response = await fetch('/events',{
       method:'post',
       headers: {'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
@@ -87,7 +87,7 @@ function Edit(){
   const handleNewBoard = async(event) =>{
     event.preventDefault()
     const token = window.localStorage.getItem('token')
-    const response = await fetch('http://localhost:3000/boards', {
+    const response = await fetch('/boards', {
       method:'post',
       headers: {'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',

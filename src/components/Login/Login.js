@@ -18,7 +18,7 @@ function Login(props){
 
   const onSubmitLogin = async(event) =>{
     event.preventDefault()
-    const user = await fetch('http://localhost:3000/login', {
+    const user = await fetch('/login', {
       method:'post',
       headers: {'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*'},
@@ -40,7 +40,7 @@ function Login(props){
   const onSubmitLogout = async(event) =>{
     event.preventDefault()
     const token = window.localStorage.getItem('token')
-    const logout = await fetch ('http://localhost:3000/logout', {
+    const logout = await fetch ('/logout', {
       method:'post',
       headers: {'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
