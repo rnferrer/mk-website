@@ -4,7 +4,7 @@ import sample from '../../images/flyer2.jpg';
 import BoardCard from '../BoardCard/BoardCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
-import {BASE_URL} from './config' 
+import {BASE_URL} from '../../config' 
 
 
 function Board(){

@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react'
 import EditCard from '../EditCard/EditCard'
 import Popup from '../Popup/Popup'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {BASE_URL} from './config' 
+import {BASE_URL} from '../../config' 
 
 function Edit(){
 

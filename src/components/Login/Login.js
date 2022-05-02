@@ -1,7 +1,7 @@
 import './Login.css'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {BASE_URL} from './config' 
+import {BASE_URL} from '../../config' 
 
 function Login(props){
 

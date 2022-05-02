@@ -2,7 +2,7 @@ import './EditCard.css'
 import {useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Popup from '../Popup/Popup'
-import {BASE_URL} from './config' 
+import {BASE_URL} from '../../config' 
 
 function EditCard(props){
   const [editTrigger, setEditTrigger] = useState(false)

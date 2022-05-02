@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Events.css'
 import EventCard from '../EventCard/EventCard'
-import {BASE_URL} from './config' 
+import {BASE_URL} from '../../config' 
 
 function Events () {
   const info = [
