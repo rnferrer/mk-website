@@ -2,8 +2,7 @@ import './EditCard.css'
 import {useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Popup from '../Popup/Popup'
-
-const fillertext = 'MK general meeting'
+import {BASE_URL} from './config' 
 
 function EditCard(props){
   const [editTrigger, setEditTrigger] = useState(false)
@@ -48,7 +47,7 @@ function EditCard(props){
     const dayString = dayToString(dayNum)
 
     try{
-      const editEvent = await fetch('/events',{
+      const editEvent = await fetch(`${BASE_URL}/events`,{
         method:'put',
         headers: {'Content-Type': 'application/json',
                   'Access-Control-Allow-Origin': '*',
@@ -75,7 +74,7 @@ function EditCard(props){
     event.preventDefault()
     const token = window.localStorage.getItem('token')
     try{
-      const editBoard = await fetch('/boards',{
+      const editBoard = await fetch(`${BASE_URL}/boards`,{
         method:'put',
         headers: {'Content-Type': 'application/json',
                   'Access-Control-Allow-Origin': '*',
@@ -107,7 +106,7 @@ function EditCard(props){
     const deleteBody = {id: props.id}
     const token = window.localStorage.getItem('token')
     if (props.currentEdit === 'events'){
-      const deleteEvent = await fetch ('/events' , {
+      const deleteEvent = await fetch (`${BASE_URL}/events` , {
         method: 'delete',
         headers: {'Content-type': 'application/json',
                   'Access-Control-Allow-Origin': '*',
@@ -116,7 +115,7 @@ function EditCard(props){
       })
       setRemoveTrigger(false)
     }else{
-      const deleteBoard = await fetch ('/boards' , {
+      const deleteBoard = await fetch (`${BASE_URL}/boards` , {
         method: 'delete',
         headers: {'Content-type': 'application/json',
                   'Access-Control-Allow-Origin': '*',

@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react'
 import EditCard from '../EditCard/EditCard'
 import Popup from '../Popup/Popup'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {BASE_URL} from './config' 
 
 function Edit(){
 
@@ -15,7 +16,7 @@ function Edit(){
 
   useEffect(()=>{
     const getEvent = async() =>{
-      const data = await fetch('/edit')
+      const data = await fetch(`${BASE_URL}/edit`)
       const newEvents = await data.json()
       
       setEvents(newEvents.events)
@@ -65,7 +66,7 @@ function Edit(){
     const dayNum = day.getDay()
     const dayString = dayToString(dayNum)
     const token = window.localStorage.getItem('token')
-    const response = await fetch('/events',{
+    const response = await fetch(`${BASE_URL}/events`,{
       method:'post',
       headers: {'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
@@ -87,7 +88,7 @@ function Edit(){
   const handleNewBoard = async(event) =>{
     event.preventDefault()
     const token = window.localStorage.getItem('token')
-    const response = await fetch('/boards', {
+    const response = await fetch(`${BASE_URL}/boards`, {
       method:'post',
       headers: {'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',

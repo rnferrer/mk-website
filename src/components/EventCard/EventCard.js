@@ -3,12 +3,6 @@ import Popup from '../Popup/Popup'
 import './EventCard.css'
 import flyer from '../../images/flyer2.jpg'
 
-
-//need to make it so you can only open one popup at a time
-
-
-
-
 function EventCard(props) {
   const [button, setButton] = useState(false)
 

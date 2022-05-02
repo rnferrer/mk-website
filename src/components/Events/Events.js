@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Events.css'
 import EventCard from '../EventCard/EventCard'
+import {BASE_URL} from './config' 
 
 function Events () {
   const info = [
@@ -47,7 +48,7 @@ function Events () {
 
   useEffect(()=>{
     const getEvents = async() =>{
-      const data = await fetch('/events')
+      const data = await fetch(`${BASE_URL}/events`)
       const newEvents = await data.json()
       const events = newEvents.events
 

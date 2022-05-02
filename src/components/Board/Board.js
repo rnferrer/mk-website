@@ -4,6 +4,7 @@ import sample from '../../images/flyer2.jpg';
 import BoardCard from '../BoardCard/BoardCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import {BASE_URL} from './config' 
 
 
 function Board(){
@@ -12,7 +13,7 @@ const [members, setMembers] = useState([])
 
 useEffect(()=>{
     const getBoard = async() =>{
-      const data = await fetch('/board')
+      const data = await fetch(`${BASE_URL}/board`)
       const newMembers = await data.json()
       console.log(newMembers)
       setMembers(newMembers)

@@ -1,6 +1,7 @@
 import './Login.css'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import {BASE_URL} from './config' 
 
 function Login(props){
 
@@ -18,7 +19,7 @@ function Login(props){
 
   const onSubmitLogin = async(event) =>{
     event.preventDefault()
-    const user = await fetch('/login', {
+    const user = await fetch(`${BASE_URL}/login`, {
       method:'post',
       headers: {'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*'},
@@ -40,7 +41,7 @@ function Login(props){
   const onSubmitLogout = async(event) =>{
     event.preventDefault()
     const token = window.localStorage.getItem('token')
-    const logout = await fetch ('/logout', {
+    const logout = await fetch (`${BASE_URL}/logout`, {
       method:'post',
       headers: {'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
