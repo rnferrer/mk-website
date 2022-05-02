@@ -8,7 +8,7 @@ import Home from './components/Home/Home';
 import Edit from './components/Edit/Edit';
 import Login from './components/Login/Login';
 import Footer from './components/Footer/Footer';
-require('dotenv').config()
+
 import {BASE_URL} from './config' 
 function App() {
 
