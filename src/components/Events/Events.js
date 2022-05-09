@@ -57,7 +57,7 @@ function Events () {
         if (event.quarter==='Fall'){
           setFallEvents([...fallEvents, event])
         }else if (event.quarter==='Winter'){
-          setWinterEvents(...[winterEvents, event])
+          setWinterEvents([...winterEvents, event])
         }else if(event.quarter==='Spring'){
           setSpringEvents([...springEvents, event])
         }
@@ -73,40 +73,40 @@ function Events () {
       <div>
         <div className="fallq">
           <h1 className="title">Fall Quarter</h1>
-          {fallEvents.map((user, i)=>{
+          {fallEvents.map((event, i)=>{
             return <EventCard
                     key={i}
-                    title={fallEvents[i].title} 
-                    time={fallEvents[i].time} 
-                    place={fallEvents[i].place} 
-                    date={fallEvents[i].date} 
-                    day={fallEvents[i].day}
+                    title={event.title} 
+                    time={event.time} 
+                    place={event.place} 
+                    date={event.date} 
+                    day={event.day}
                     />
           })}
         </div>
         <div className="winterq">
           <h1 className="title"> Winter Quarter</h1>
-          {winterEvents.map((user, i)=>{
+          {winterEvents.map((event, i)=>{
             return <EventCard
-                    key={i}
-                    title={winterEvents[i].title} 
-                    time={winterEvents[i].time} 
-                    place={winterEvents[i].place} 
-                    date={winterEvents[i].date} 
-                    day={winterEvents[i].day}
+                      key={i}
+                      title={event.title} 
+                      time={event.time} 
+                      place={event.place} 
+                      date={event.date} 
+                      day={event.day}
                     />
           })}
         </div>
         <div className="springq">
           <h1 className="title"> Spring Quarter</h1>
-          {springEvents.map((user, i)=>{
+          {springEvents.map((event, i)=>{
             return <EventCard
-                    key={i}
-                    title={springEvents[i].title} 
-                    time={springEvents[i].time} 
-                    place={springEvents[i].place} 
-                    date={springEvents[i].date} 
-                    day={springEvents[i].day}
+                      key={i}
+                      title={event.title} 
+                      time={event.time} 
+                      place={event.place} 
+                      date={event.date} 
+                      day={event.day}
                     />
           })}
         </div>
