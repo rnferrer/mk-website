@@ -45,4 +45,8 @@
     .edit-container{
       width: 90%;
     }
+
+    .edit-tab-container{
+      padding-bottom: 1rem;
+    }
   }

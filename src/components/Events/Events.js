@@ -15,21 +15,19 @@ function Events () {
       const newEvents = await data.json()
       const events = newEvents.events
 
-
+      console.log(events)
       events.forEach(event => {
         if (event.quarter==='Fall'){
-          setFallEvents([...fallEvents, event])
+          setFallEvents(fallEvents=> [...fallEvents, event])
         }else if (event.quarter==='Winter'){
-          setWinterEvents([...winterEvents, event])
+          setWinterEvents(winterEvents => [...winterEvents, event])
         }else if(event.quarter==='Spring'){
-          setSpringEvents([...springEvents, event])
+          setSpringEvents(springEvents => [...springEvents, event])
         }
         
       });
-      console.log(fallEvents)
     }
     getEvents()
-    console.log(fallEvents)
     
   },[])
     return(
